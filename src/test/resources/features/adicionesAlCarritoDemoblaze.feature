@@ -29,3 +29,12 @@ Background:
     When en la categoria monitores y clic en el producto
     Then vere el producto agregado en el carrito
 
+ # @cp5
+ # Scenario: eliminar un producto de la categoria telefono
+  #  When doy clic en el carrito busco el telefono y elimnimo
+  #  Then ya no vere el telefono en el carrito en el carrito
+
+# @cp6
+  #Scenario: eliminar un producto de la categoria monitores
+  #  When doy clic en el carrito busco el monitores y elimnimo
+   # Then ya no vere el monito en el carrito
