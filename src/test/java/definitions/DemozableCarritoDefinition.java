@@ -56,4 +56,24 @@ public class DemozableCarritoDefinition {
     }
 
 
+    @When("^en la categoria telefono agrego un celuarl al carrito$")
+    public void enLaCategoriaTelefonoAgregoUnCeluarlAlCarrito() throws InterruptedException {
+        pageObjetoDemoblaseCarrito.AgregarProductoCategoriaTefono();
+    }
+
+    @Then("^en el carrito puedo ver el precio a pagar$")
+    public void enElCarritoPuedoVerElPrecioAPagar() throws InterruptedException {
+        pageObjetoDemoblaseCarrito.ValidacionPreciotelefono();
+    }
+
+    @When("^En la  categoria MOnitor agrego un monitor al carrito$")
+    public void enLaCategoriaMOnitorAgregoUnMonitorAlCarrito() throws InterruptedException {
+        pageObjetoDemoblaseCarrito.AgregarProductoCategoriamonitores();
+
+    }
+
+    @Then("^en el carrito vere el valor total a pagar del monitor$")
+    public void enElCarritoVereElValorTotalAPagarDelMonitor() throws InterruptedException {
+        pageObjetoDemoblaseCarrito.ValidacionValorTotalMoniotr();
+    }
 }

@@ -46,8 +46,8 @@ public class LocalizadoresDemoblazeCarrito extends PageObject {
     @FindBy(xpath = "//table[@class =\"table table-bordered table-hover table-striped\" ]/tbody[@id=\"tbodyid\"]")
     public WebElementFacade ValidarimagenEnCarrito;
 
-    @FindBy(xpath = "")//tbody[@id="tbodyid"]/tr/td/a
-    public WebElementFacade eliminarproducto;
 
+    @FindBy(xpath = "//h3[@id=\"totalp\"]")
+    public  WebElementFacade PrecioTotal;
 
 }
